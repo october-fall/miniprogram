@@ -1,0 +1,22 @@
+<view class="box">
+  <view class="border">
+    <view class="content" bindtap="taptap">
+      <view class="{{tap&&'leftb'}} ball">
+        <view></view>
+        <image mode="aspectFit" src="https://z3.ax1x.com/2021/07/12/WP5tJ0.png"/>
+      </view>
+      <view class="{{tap&&'middleb'}} ball">
+        <view></view>
+        <image mode="aspectFit" src="https://z3.ax1x.com/2021/07/12/WP5tJ0.png"/>
+      </view>
+      <view class="{{tap&&'middleb'}} ball">
+        <view></view>
+        <image mode="aspectFit" src="https://z3.ax1x.com/2021/07/12/WP5tJ0.png"/>
+      </view>
+      <view class="{{tap&&'rightb'}} ball">
+        <view></view>
+        <image mode="aspectFit" src="https://z3.ax1x.com/2021/07/12/WP5tJ0.png"/>
+      </view>
+    </view>
+  </view>
+</view>

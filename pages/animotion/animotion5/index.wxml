@@ -1,0 +1,17 @@
+<!-- 
+    一个泡泡
+    1.新建一个泡泡
+    2.在点击的时候使泡泡显示
+    3.给出现的泡泡加一个动效，晃动3s之后放大10%然后消失
+    4.判断点击间隔时间，防止两次点击操作间隔太快
+    5.获取点击开始到结束的时间，根据时间设置width的大小
+-->
+<view class="box"  
+    bindtouchstart="touchStart"
+    bindtouchend="touchEnd"
+>
+    <view class="{{show&&'ball'}} {{!show&&'hiddenball'}}" style="width: {{width}}rpx;height: {{width}}rpx;position:relative;top:{{ballTop}}rpx;left:{{ballLeft}}rpx">
+        <view class="circle color{{color}}" style=" width: {{width}}rpx;height: {{width}}rpx;"></view>
+        <image class="light" style="width: {{width}}rpx;height: {{width}}rpx;position: absolute;display: block;top: 0;" mode="aspectFit" src="https://z3.ax1x.com/2021/07/14/WZL1je.png"/>
+    </view>
+</view>

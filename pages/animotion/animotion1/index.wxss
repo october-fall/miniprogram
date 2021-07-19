@@ -1,0 +1,77 @@
+page {
+  background-color: rgb(17, 17, 19);
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100rpx;
+}
+.button{
+  background-color: rgb(71, 142, 209);
+  height: 120rpx;
+  width: 120rpx;
+  border:4rpx solid rgb(181, 194, 252);
+  border-radius: 50%;
+  color: aliceblue;
+  font-size: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stars{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.img0 {
+  width: 160rpx;
+  height: 160rpx;
+  animation: opacity-change 2s ease-in-out infinite;
+  /* 
+    ease - 指定从慢速开始，然后加快，然后缓慢结束的动画（默认）
+    linear - 规定从开始到结束的速度相同的动画
+    ease-in - 规定慢速开始的动画
+    ease-out - 规定慢速结束的动画
+    ease-in-out - 指定开始和结束较慢的动画
+    cubic-bezier(n,n,n,n) - 运行您在三次贝塞尔函数中定义自己的值 
+  */
+  /* 
+    infinite	规定动画应该无限次播放。
+  */
+}
+.img1 {
+  width: 100rpx;
+  height: 100rpx;
+  animation: opacity-change 1.5s ease-in-out infinite;
+}
+.img2 {
+  width: 60rpx;
+  height: 60rpx;
+  animation: opacity-change 1.8s ease-in-out infinite;
+}
+
+@keyframes opacity-change {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+  @keyframes	规定动画模式。
+  animation	设置所有动画属性的简写属性。
+  animation-delay	规定动画开始的延迟。
+  animation-direction	定动画是向前播放、向后播放还是交替播放。
+  animation-duration	规定动画完成一个周期应花费的时间。
+  animation-fill-mode	规定元素在不播放动画时的样式（在开始前、结束后，或两者同时）。
+  animation-iteration-count	规定动画应播放的次数。
+  animation-name	规定 @keyframes 动画的名称。
+  animation-play-state	规定动画是运行还是暂停。
+  animation-timing-function	规定动画的速度曲线。
+*/

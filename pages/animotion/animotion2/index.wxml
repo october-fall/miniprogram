@@ -1,0 +1,44 @@
+
+<view 
+  class="box"
+  wx:for="{{messages}}"
+  wx:key="id"
+  data-index="{{item.id}}"
+  bindtouchmove="moveInfo" 
+  bindtouchstart="startInfo"
+  data-index-type="scrollView"
+>
+  <!-- selIndex==index  意味着 当前元素被左滑了  所以使用内容删除时的样式infoMargin -->
+  <view 
+    class="info {{selIndex==index && 'infoMargin'}}" 
+    wx:if="{{item.value!=undefined}}"
+  >
+    {{item.value}}
+  </view>
+  <!-- selIndex==index  意味着 当前元素被左滑了  所以使用删除显示时的样式optionLeft -->
+ 
+  <view 
+    class="option {{selIndex==index && 'optionLeft'}}"
+  >
+    <view
+      data-index="{{item.value}}"
+      class="remove"
+      bindtap="remove"
+    >
+      删除
+    </view>
+  </view>
+</view>
+
+
+<view class="submitInput">
+  <view class="input">
+    <textarea  
+      placeholder="输入信息" 
+      type="text" 
+      bindinput="getInput" 
+      value="{{message}}"  
+    > </textarea>
+  </view>
+  <view class="submit" bindtap="submit">发送</view>
+</view>

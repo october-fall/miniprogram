@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/animotion/animotion6/index",
+    "pages/animotion/study1/index",
+    
+
+
+    "pages/mine/accounts/index",
+
+
+
+    "pages/animotion/animotion5/index",
+    "pages/animotion/animotion4/index",
+    "pages/animotion/animotion3/index",
+    "pages/animotion/animotion2/index",
+    "pages/animotion/animotion1/index",
+    "pages/type/type",
+    "pages/mine/myimages/index",
+    "pages/mine/mine",
+    "pages/logs/logs"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ADC673",
+    "navigationBarTitleText": "我的应用",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#E7F1CE"
+  },
+  
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home-n.png",
+      "selectedIconPath": "images/home-y.png"
+    },
+    {
+      "pagePath": "pages/type/type",
+      "text": "分类", 
+      "iconPath": "images/type-n.png",
+      "selectedIconPath": "images/type-y.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的", 
+      "iconPath": "images/mine-n.png",
+      "selectedIconPath": "images/mine-y.png"
+    }],
+    "color": "#99dd99"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

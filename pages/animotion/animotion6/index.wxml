@@ -1,0 +1,75 @@
+<view class="box">
+  <loading hidden="{{loading}}">页面加载中...</loading>
+<!-- 
+2048
+1. 规划整体的页面布局
+2. 获取用户的触摸轨迹,计算出合并方向
+   得到开始与结束的坐标 
+   => 先比较x坐标 
+   => 再比较direction = (endY-startY)/(endX-startX)
+   endX > startX 且 direction<=-1 => 向上
+                    -1<direction<1 => 向右
+                    direction>=1 => 向下
+   endX < startX 且 direction<=-1 => 向下
+                    -1<direction<1 => 向左
+                    direction>=1 => 向上
+   endX = startX 且 endY>startY => 向下
+                    endY<startY => 向上
+                    endY=startY => 不动
+3. 生成游戏初始化界面
+   1）所有value = 0 的格子设置为空白格
+   2）随机生成一个0-15的数字 将该格子的value设为2或4
+      再随机生成一个0-15的数字（如果和上一个相同就重新生成） 将该格子的value设为2或4
+
+
+
+
+
+
+- 将棋盘的数字生成4*4的二维数组list
+- 根据用户滑动方向生成四个小数组，比如用户将上面的棋盘向右滑动，则四个数组为：
+> item[0] = [2, 0, 2, 0];
+> item[1] = [0, 0, 0, 0];
+>item[2] = [2, 0, 0, 0];   // 注意是2000而不是0002，因为是向右滑动要从右边开始
+> item[3] = [0, 0, 0, 0];
+- 接下来就是滑动时合并，拿item[0]举例，如果是2020，向右滑动我们应该成为0004
+>- 将item[0]的所有0移到末尾变为2200，遍历item将相同的下标值相加，后面的数置为0
+>- 2020 -- 2200 -- 4200 --- 4000
+- 如法炮制就可以实现滑动时合并 
+  -->
+  <view class="head">
+    <view class="Hleft">
+      <view class="score">
+        <view class="Stop">score</view>
+        <view class="Sbottom">{{score}}</view>
+      </view>
+    </view>
+    <view class="Hright">
+      <view class="time">
+        <view>用时:{{time}}</view>
+      </view>
+      <view class="restart">
+        <view>重新开始</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="body">
+  
+
+  <view class="grid" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <view 
+      wx:for="{{num}}"
+      wx:for-index="id"
+      wx:for-item="item"
+      wx:key="*this"
+      class="grid-items {{'value'+item.value}}"
+    >
+      {{item.value}}
+    </view>
+  </view>
+  
+  </view>
+
+
+</view>

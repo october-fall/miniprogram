@@ -1,0 +1,16 @@
+<view class="avatar">
+  <image mode="aspectFit" src="https://z3.ax1x.com/2021/07/09/RvMBz8.jpg"/>
+  <text class="username">miniprogram-2</text>
+</view>
+
+<view class="navigator">
+  <view class="navigator-item">
+    <navigator url="../../pages/mine/calendar/index">◉ 日历</navigator>
+  </view>
+</view>
+
+<view class="navigator">
+  <view class="navigator-item">
+    <navigator url="../../pages/mine/myimages/index">◉ 相册</navigator>
+  </view>
+</view>

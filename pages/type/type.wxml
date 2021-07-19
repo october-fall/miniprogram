@@ -1,0 +1,40 @@
+<view class="box">
+  <view class="header">
+    <view class="search">
+      <input 
+        class="searchInput" 
+        placeholder="{{placeholder}}" 
+        placeholder-class="placeholder"
+        type="text"></input>
+      <view class="searchButton">搜索</view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="leftbox">
+      <view>立春</view>
+      <view>雨水</view>
+      <view>惊蛰</view>
+      <view>春风</view>
+      <view>清明</view>
+      <view>谷雨</view>
+      <view>立夏</view>
+      <view>小满</view>
+      <view>芒种</view>
+      <view>夏至</view>
+      <view>小暑</view>
+      <view>大暑</view>
+      <view>立秋</view>
+      <view>处暑</view>
+      <view>白露</view>
+      <view>秋分</view>
+      <view>寒露</view>
+      <view>霜降</view>
+      <view>立冬</view>
+      <view>小雪</view>
+      <view>大雪</view>
+      <view>冬至</view>
+      <view>小寒</view>
+      <view>大寒</view>
+    </view>
+  </view>
+</view>

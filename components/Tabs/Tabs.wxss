@@ -1,0 +1,18 @@
+
+.tabs_title{
+  display: flex;
+  padding: 20rpx;
+  
+}
+.title_item{
+  padding-bottom: 10rpx;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5rpx solid rgb(227, 231, 216);
+}
+.active{
+  color: rgb(151, 177, 91);
+  border-bottom: 5rpx solid rgb(200, 218, 155);
+}

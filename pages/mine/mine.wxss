@@ -1,0 +1,35 @@
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.avatar image{
+  margin: 20rpx;
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 50%;
+}
+.username{
+  width: 100%;
+  text-align: center;
+}
+
+.navigator{
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+}
+.navigator-item{
+  margin:2%;
+  padding-left: 2%;
+  width: 25%;
+  height: 60rpx;
+  background-color: rgb(173, 190, 115);
+  border-radius: 10rpx;
+  color: aliceblue;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}

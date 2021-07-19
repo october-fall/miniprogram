@@ -1,0 +1,64 @@
+.scores{
+  width: 750rpx;
+  height: 375rpx;
+  background-color: rgb(215, 223, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.namea{
+  height: 165rpx;
+  width: 90rpx;
+  position:absolute;
+  top: 40rpx;
+  left: 140rpx;
+  color: aliceblue;
+  font-size: 40rpx;
+}
+.nameb{
+  height: 165rpx;
+  width: 90rpx;
+  position:absolute;
+  top: 40rpx;
+  right: 165rpx;
+  color: aliceblue;
+  font-size: 40rpx;
+}
+.and{
+  width: 50rpx;
+  height: 165rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 90rpx;
+}
+.team{
+  height: 165rpx;
+  width: 94rpx;
+  margin: 3rpx;
+}
+.S{
+  height: 165rpx;
+  width: 90rpx;
+  position:absolute;
+  top: 105rpx;
+  border: 2rpx solid rgb(240, 240, 240);
+}
+.old{
+  animation: flipo 0.7s ease-in-out;
+}
+@keyframes flipo{
+  0%{
+    transform-origin:top;
+    transform:rotatex(0deg);
+  }
+  70%{
+    transform-origin:top;
+    transform:rotatex(110deg);
+  }
+  100%{
+    transform-origin:top;
+    transform:rotatex(90deg);
+  }
+}

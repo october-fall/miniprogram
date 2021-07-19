@@ -1,0 +1,75 @@
+.submitInput{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.input{
+  font-size: 36rpx;
+  background-color: rgb(255, 255, 255);
+  width: 83%;
+  height: 100rpx;
+  overflow: auto;
+  border:2rpx solid rgb(196, 209, 159);
+  border-radius: 4rpx;
+}
+.submit{
+  width: 13%;
+  height: 96rpx;
+  background-color: rgb(255, 255, 255);
+  font-size: 40rpx;
+  color: rgb(140, 155, 55);
+  border:4rpx solid rgb(176, 189, 105);
+  border-radius: 10rpx;
+  box-shadow:rgb(145, 153, 98) 4rpx 4rpx 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* 内容 显示时的样式 */
+.box{
+  display: flex;
+  background-color: rgb(239, 245, 227);
+  margin: 10rpx 0 10rpx 0;
+}
+.info{
+  width: 750rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  
+}
+/* 内容 删除时的样式 */
+/* transition: [属性名] [持续时间] [速度曲线] [延迟时间]; */
+.infoMargin{
+  transition: transform 0.1s linear; 
+  transform: translateX(-150rpx);
+  background: rgb(255, 247, 240);
+}
+/* 
+删除 隐藏时的样式
+*/
+.option{
+  position: absolute;
+  right: 0;
+  transform: translateX(150rpx);
+  transition: transform 0.1s linear;
+  
+}
+/* 
+删除 显示时的样式
+*/
+.optionLeft {
+  transform: translateX(0); 
+}
+.remove{
+  background: rgb(228, 156, 73);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 120rpx;
+}

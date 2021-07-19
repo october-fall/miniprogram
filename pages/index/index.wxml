@@ -1,0 +1,36 @@
+<!-- 轮播图 -->
+<swiper 
+  autoplay 
+  interval="3000" 
+  circular 
+  indicator-dots
+  indicator-color="rgba(241, 116, 67,0.6)"
+  indicator-active-color="rgba(113, 161, 37, 0.7)"
+>
+  <swiper-item><image mode="widthFix" src="https://z3.ax1x.com/2021/07/06/RoOwSx.png"/></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://z3.ax1x.com/2021/07/06/RoO0l6.png"/></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://z3.ax1x.com/2021/07/06/RoOy0e.png"/></swiper-item>
+  <swiper-item><image mode="widthFix" src="https://z3.ax1x.com/2021/07/06/RoORfI.png"/></swiper-item>
+</swiper>
+
+<!-- 分页导航栏 -->
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="navigator">
+      <view class="navigator-item"><navigator url="../animotion/animotion6/index" >2048</navigator></view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="navigator">
+      <view class="navigator-item"><navigator url="../animotion/animotion1/index" >闪烁的星星</navigator></view>
+      <view class="navigator-item"><navigator url="../animotion/animotion2/index" >左滑删除</navigator></view>
+      <view class="navigator-item"><navigator url="../animotion/animotion3/index" >牛顿摆</navigator></view>
+      <view class="navigator-item"><navigator url="../animotion/animotion4/index" >计分板</navigator></view>
+      <view class="navigator-item"><navigator url="../animotion/animotion5/index" >一个泡泡</navigator></view>
+      
+    </view>
+  </block>
+</Tabs>
+
+
+

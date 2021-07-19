@@ -1,0 +1,62 @@
+<view class="scores">
+    <view class="namea">teamA</view>
+    <view class="team" >
+      <view wx:if="{{10==ida3+1&&10==ida2+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[ida1+1].src}}"></image>
+      </view>
+      <image class="S {{10==ida3+1&&10==ida2+1&&aa&&'old'}}" mode="aspectFit" src="{{numbers[ida1].src}}"></image>
+    </view>
+    <view class="team" >
+      <view wx:if="{{10==ida2+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[ida2+1].src}}"></image>
+      </view>
+      <image class="S {{10==ida3+1&& aa&&'old'}}" mode="aspectFit" src="{{numbers[ida2].src}}"></image>
+    </view>
+    <view class="team" bindtap="scoresa" data-index="{{ida3}}">
+      <view wx:if="{{10==ida3+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[ida3+1].src}}"></image>
+      </view>
+      <image class="S {{aa&&'old'}}" mode="aspectFit" src="{{numbers[ida3].src}}"></image>
+    </view>
+
+  <view class="and">:</view>
+
+  <view class="nameb">teamB</view>
+    <view class="team" >
+      <view wx:if="{{10==idb3+1&&10==idb2+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[idb1+1].src}}"></image>
+      </view>
+      <image class="S {{10==idb3+1&&10==idb2+1&&bb&&'old'}}" mode="aspectFit" src="{{numbers[idb1].src}}"></image>
+    </view>
+    <view class="team" >
+      <view wx:if="{{10==idb2+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[idb2+1].src}}"></image>
+      </view>
+      <image class="S {{10==idb3+1&&bb&&'old'}}" mode="aspectFit" src="{{numbers[idb2].src}}"></image>
+    </view>
+    <view class="team" bindtap="scoresb" data-index="{{idb3}}">
+      <view wx:if="{{10==idb3+1}}">
+        <image class="S" mode="aspectFit" src="{{numbers[0].src}}"></image>
+      </view>
+      <view wx:else>
+        <image class="S" mode="aspectFit" src="{{numbers[idb3+1].src}}"></image>
+      </view>
+      <image class="S {{bb&&'old'}}" mode="aspectFit" src="{{numbers[idb3].src}}"></image>
+    </view>
+
+</view>

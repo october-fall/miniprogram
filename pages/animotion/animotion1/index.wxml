@@ -1,0 +1,14 @@
+<!--pages/animotion/animotion1/index.wxml-->
+<view class="stars">
+  <image 
+    wx:for="{{stars}}"
+    wx:key="id"
+    class="{{item.value}}"
+    src="../../../images/animotion/p1.png"
+  ></image>
+</view>
+
+<view class="buttons">
+  <view class="button" bindtap="addStar">+</view>
+  <view class="button" bindtap="removeStar">-</view>
+</view>

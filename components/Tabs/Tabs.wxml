@@ -1,0 +1,27 @@
+<!--   
+  父（页面文件）向子组件 传递数据通过 标签属性 的方式来传递
+    在子组件是进行接收
+    把这个数据当成是data中的数据直接用即可
+-->
+<view class="tabs">
+  <view class="tabs_title">
+    <view
+    wx:for="{{tabs}}"
+    wx:key="id"
+    data-index="{{index}}"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="handleItemTap"
+    >
+    {{item.name}}
+    </view>
+  </view>
+  <view class="tabs_content">
+  <!-- 
+    slot标签 其实就是一个占位符 插槽
+    等到父组件调用子组件的时候 再传递标签过来
+    最终被传递过来的标签会替换slot插槽的位置。
+   -->
+  <slot>
+  </slot>
+  </view>
+</view>
