@@ -1,2 +1,7 @@
-<!--pages/animotion/animotion7/index.wxml-->
-<text>pages/animotion/animotion7/index.wxml</text>
+<view class="today {{flag?'DN':'ND'}}">
+  <view class="box">
+    <view bindtap="change" class="change {{flag?'DTN':'NTD'}}">
+      <view class="ballDay {{flag?'ballDTN':'ballNTD'}}"></view>
+    </view>
+  </view>
+</view>

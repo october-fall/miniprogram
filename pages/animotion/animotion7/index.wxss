@@ -1,1 +1,181 @@
-/* pages/animotion/animotion7/index.wxss */
+.today{
+  height: 100vh;
+  width: 100vm;
+  background-color: rgb(236, 247, 252);
+  display: flex;
+  justify-content: center;
+  padding-top: 400rpx;
+}
+.DN{
+  animation: DN 1s ease-in-out;
+  background-color: rgb(189, 195, 224);
+}
+@keyframes DN{
+  0%{
+    background-color: rgb(236, 247, 252);
+  }10%{
+    background-color: rgb(236, 247, 252);
+  }90%{
+    background-color: rgb(189, 195, 224);
+  }100%{
+    background-color: rgb(189, 195, 224);
+  }
+}
+
+.ND{
+  animation: ND 1s ease-in-out;
+  background-color: rgb(236, 247, 252);
+}
+@keyframes ND{
+  0%{
+    background-color: rgb(189, 195, 224);
+  }10%{
+    background-color: rgb(189, 195, 224);
+  }90%{
+    background-color: rgb(236, 247, 252);
+  }100%{
+    background-color: rgb(236, 247, 252);
+  }
+}
+
+
+.change{
+  height: 90rpx;
+  width: 180rpx;
+  border-radius: 90rpx;
+  border:5rpx solid rgb(186, 216, 228);
+  background-color: rgb(209, 229, 241);
+  position: relative;
+}
+.DTN{
+  animation: DTN 1s ease-in-out;
+  background-color: rgb(140, 153, 211);
+  border:5rpx solid rgb(119, 133, 192);
+}
+@keyframes DTN{
+  0%{
+    border:5rpx solid rgb(186, 216, 228);
+    background-color: rgb(209, 229, 241);
+  }10%{
+    border:5rpx solid rgb(186, 216, 228);
+  background-color: rgb(209, 229, 241);
+  }90%{
+    border:5rpx solid rgb(119, 133, 192);
+    background-color: rgb(140, 153, 211);
+  }100%{
+    border:5rpx solid rgb(119, 133, 192);
+    background-color: rgb(140, 153, 211);
+  }
+}
+.NTD{
+  animation: NTD 1s ease-in-out;
+  border:5rpx solid rgb(186, 216, 228);
+  background-color: rgb(209, 229, 241);
+}
+@keyframes NTD{
+  0%{
+    border:5rpx solid rgb(119, 133, 192);
+    background-color: rgb(140, 153, 211);
+  }10%{
+    border:5rpx solid rgb(119, 133, 192);
+    background-color: rgb(140, 153, 211);
+  }90%{
+    border:5rpx solid rgb(186, 216, 228);
+    background-color: rgb(209, 229, 241);
+  }100%{
+    border:5rpx solid rgb(186, 216, 228);
+    background-color: rgb(209, 229, 241);
+  }
+}
+
+.ballDay{
+  position: absolute;
+  top: 5rpx;
+  left: 5rpx;
+  height: 75rpx;
+  width: 75rpx;
+  border-radius: 80rpx;
+  border:5rpx solid rgb(255, 246, 162);
+  background-color: rgb(255, 253, 220);
+}
+.ballDTN{
+  animation: dayToNight 1s ease-in-out;
+  transform: translateX(90rpx);
+  border:5rpx solid rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
+}
+@keyframes dayToNight{
+  0%{
+    width: 75rpx;
+    transform: translateX(0rpx);
+    border:5rpx solid rgb(255, 246, 162);
+    background-color: rgb(255, 253, 220);
+  }
+  10%{
+    width: 75rpx;
+    transform: translateX(0rpx);
+    border:5rpx solid rgb(255, 246, 162);
+    background-color: rgb(255, 253, 220);
+  }
+  40%{
+    width: 100rpx;
+  }
+  90%{
+    width: 75rpx;
+    transform: translateX(90rpx);
+    border:5rpx solid rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+  }
+  100%{
+    width: 75rpx;
+    transform: translateX(90rpx);
+    border:5rpx solid rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.ballNight{
+  position: absolute;
+  top: 5rpx;
+  left: 5rpx;
+  height: 75rpx;
+  width: 75rpx;
+  border-radius: 80rpx;
+  border:5rpx solid rgb(233, 233, 233);
+  background-color: rgb(255, 255, 255);
+}
+.ballNTD{
+  animation: nightToDay 1s ease-in-out;
+  transform: translateX(0rpx);
+  border:5rpx solid rgb(255, 246, 162);
+  background-color: rgb(255, 253, 220);
+}
+@keyframes nightToDay{
+  0%{
+    width: 75rpx;
+    transform: translateX(90rpx);
+    border:5rpx solid rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+  }
+  10%{
+    width: 75rpx;
+    transform: translateX(90rpx);
+    border:5rpx solid rgb(233, 233, 233);
+    background-color: rgb(255, 255, 255);
+  }
+  60%{
+    width: 100rpx;
+  }
+  90%{
+    width: 75rpx;
+    transform: translateX(0rpx);
+    border:5rpx solid rgb(255, 246, 162);
+    background-color: rgb(255, 253, 220);
+  }
+  100%{
+    width: 75rpx;
+    transform: translateX(0rpx);
+    border:5rpx solid rgb(255, 246, 162);
+  background-color: rgb(255, 253, 220);
+  }
+}
