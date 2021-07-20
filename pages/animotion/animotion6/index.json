@@ -1,5 +1,4 @@
 {
   "usingComponents": {},
-  "navigationBarTitleText": "2048小游戏",
-  "enablePullDownRefresh":false
+  "navigationBarTitleText": "信封"
 }

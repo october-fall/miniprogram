@@ -1,90 +1,168 @@
 .box{
   height: 100vh;
   width: 100vm;
-  background-color: rgb(250, 252, 244);
+  background-color: rgb(245, 250, 253);
+  position: relative;
+  padding: 300rpx 0 0 230rpx;
 }
-.head{
-  height: 25%;
-  width: 100%;
-  background-color: rgb(125, 193, 202);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Hleft{
-  height: 50%;
-  width: 40%;
-  background-color: rgb(245, 245, 245);
-}
-.score{
-  height: 150rpx;
-  width: 150rpx;
-  background-color: rgb(241, 183, 183);
-  margin-left: 100rpx;
+.smallbox{
+  height: 200rpx;
+  width: 300rpx;
+  background-color: #b3d4e9;
   position: relative;
 }
-.Stop{
+.top{
   position: absolute;
-  top:20rpx;
+  height: 0; 
+  width: 0; 
+  border-top: 120rpx solid #bbd9ec;
+  border-left: 150rpx solid transparent; 
+  border-right: 150rpx solid transparent; 
+  border-bottom: 100rpx solid transparent;
 }
-.Sbottom{
+.open{
+  transform: rotatex(-180deg);
+  transform-origin: top;
+  animation: open 1s ease-in;
+}
+@keyframes open{
+  0%{
+    transform: rotatex(0deg);
+  }
+  50%{
+    transform: rotatex(-180deg);
+  }
+  100%{
+    transform: rotatex(-180deg);
+  }
+}
+.close{
+  transform: rotatex(0deg);
+  transform-origin: top;
+  animation: close 1s ease-in;
+}
+@keyframes close{
+  0%{
+    transform: rotatex(-180deg);
+  }
+  50%{
+    transform: rotatex(-180deg);
+  }
+  100%{
+    transform: rotatex(0deg);
+  }
+}
+.bottom{
   position: absolute;
-  top:60rpx;
+  height: 0; 
+  width: 0; 
+  border-top: 100rpx solid transparent;
+  border-left: 150rpx solid #dff1fd; 
+  border-right: 150rpx solid #dff1fd; 
+  border-bottom: 100rpx solid #d2e8f7;
 }
-.Hright{
-  height: 50%;
-  width: 60%;
-  background-color: rgb(245, 245, 245);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.letter{
+  position: absolute;
+  border-radius: 10rpx;
+  margin: 10rpx 0 0 20rpx;
+  height: 180rpx; 
+  width: 260rpx;
+  background-color: #fafeff;
+  box-shadow: rgb(228, 228, 228) 2rpx 2rpx;
 }
-.time{
-  height: 70rpx;
-  width: 300rpx;
-  background-color: rgb(240, 237, 102);
-  display: flex;
-  align-items: center;
+.letter view{
+  padding: 10rpx 0 0 20rpx;
+  font-size: 22rpx;
+  color: #c0c0c0;
 }
-.restart{
-  height: 70rpx;
-  width: 300rpx;
-  background-color: rgb(240, 237, 102);
-  display: flex;
-  align-items: center;
+.out{
+  transform: translatey(-100rpx);
+  transform-origin: top;
+  animation: out 1s ease-in ;
+}
+@keyframes out{
+  0%{
+    transform: translatey(0rpx);
+  }
+  50%{
+    transform: translatey(0rpx);
+  }
+  100%{
+    transform: translatey(-100rpx);
+  }
+}
+.iin{
+  transform: translatey(0rpx);
+  transform-origin: top;
+  animation: iin 1s ease-in ;
+}
+@keyframes iin{
+  0%{
+    transform: translatey(-100rpx);
+  }
+  50%{
+    transform: translatey(0rpx);
+  }
+  100%{
+    transform: translatey(0rpx);
+  }
 }
 
-.body{
-  height: 75%;
-  width: 100%;
-  background-color: rgb(228, 189, 82);
-  display: flex;
-  justify-content: center;
-  
+.bb1{
+  animation: pupu 1.5s ease-in-out;
 }
-.grid{
-  height: 600rpx;
-  width: 600rpx;
-  margin-top: 75rpx;
-  display: grid;
-  background-color: rgb(230, 219, 191);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 15rpx 15rpx;
-  padding: 25rpx;
-  border-radius: 15rpx;
+.bb2{
+  animation: pupu 1.2s ease-in-out;
 }
-.grid-items{
-  border-radius: 15rpx;
-  background-color: rgb(228, 230, 231);
+.bb3{
+  animation: pupu 1.8s ease-in-out;
 }
-.value0{
-  background-color: rgb(255, 236, 153);
+.b1{
+  position:absolute;
+  top:100rpx;
+  left: 30rpx;
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+  background-color: #c8e6ffd7;
 }
-.value2{
-  background-color: rgb(253, 224, 95);
+.b2{
+  position:absolute;
+  top: 100rpx;
+  left: 90rpx;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  background-color: #b6dcfcdc;
 }
-.value4{
-  background-color: rgb(250, 171, 68);
+.b3{
+  position:absolute;
+  top:100rpx;
+  left:120rpx;
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  background-color: #c8efffd5;
+}
+@keyframes pupu{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-400rpx);
+    opacity: 0.5;
+  }
+}
+.Lindex{
+  z-index: 1;
+}
+.Bindex{
+  z-index: 2;
+}
+.Tindex{
+  z-index: 0;
 }

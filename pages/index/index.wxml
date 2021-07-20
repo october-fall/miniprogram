@@ -17,7 +17,7 @@
 <Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
   <block wx:if="{{tabs[0].isActive}}">
     <view class="navigator">
-      <view class="navigator-item"><navigator url="../animotion/animotion6/index" >2048</navigator></view>
+      <view class="navigator-item"><navigator url="../game/game1/index" >2048</navigator></view>
     </view>
   </block>
   <block wx:else>
@@ -27,7 +27,7 @@
       <view class="navigator-item"><navigator url="../animotion/animotion3/index" >牛顿摆</navigator></view>
       <view class="navigator-item"><navigator url="../animotion/animotion4/index" >计分板</navigator></view>
       <view class="navigator-item"><navigator url="../animotion/animotion5/index" >一个泡泡</navigator></view>
-      
+      <view class="navigator-item"><navigator url="../animotion/animotion6/index" >信封</navigator></view>
     </view>
   </block>
 </Tabs>
