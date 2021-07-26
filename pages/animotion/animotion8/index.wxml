@@ -1,0 +1,1 @@
+<canvas canvas-id="mycanvas" id="mycanvas" bindtouchstart="touchStart" bindtouchmove="touchMove" type="2d"></canvas>

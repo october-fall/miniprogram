@@ -1,14 +1,18 @@
 {
   "pages":[
 
+    "pages/animotion/animotion10/index",
 
     "pages/index/index",
+
+
+
 
     "pages/game/game1/index",
 
     "pages/animotion/study1/index",
-    "pages/mine/accounts/index",
-
+    "pages/animotion/animotion9/index",
+    "pages/animotion/animotion8/index",
     "pages/animotion/animotion7/index",
     "pages/animotion/animotion6/index",
     "pages/animotion/animotion5/index",
@@ -17,6 +21,7 @@
     "pages/animotion/animotion2/index",
     "pages/animotion/animotion1/index",
     "pages/type/type",
+    "pages/mine/accounts/index",
     "pages/mine/myimages/index",
     "pages/mine/mine",
     "pages/logs/logs"

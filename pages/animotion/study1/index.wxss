@@ -1,0 +1,5 @@
+#mycanvas{
+  width: 600rpx;
+  height: 800rpx;
+  background-color: rgba(0, 0, 0, 1)
+}

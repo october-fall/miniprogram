@@ -29,6 +29,8 @@
       <view class="navigator-item"><navigator url="../animotion/animotion5/index" >一个泡泡</navigator></view>
       <view class="navigator-item"><navigator url="../animotion/animotion6/index" >信封</navigator></view>
       <view class="navigator-item"><navigator url="../animotion/animotion7/index" >昼夜切换</navigator></view>
+      <!-- <view class="navigator-item"><navigator url="../animotion/animotion8/index" >canvas生成球</navigator></view> -->
+      <view class="navigator-item"><navigator url="../animotion/animotion9/index" >涂鸦板</navigator></view>
     </view>
   </block>
 </Tabs>

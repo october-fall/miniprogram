@@ -1,0 +1,27 @@
+<view>
+  <!-- 涂鸦区 -->
+  <view class="canvas_area">
+    <canvas 
+      canvas-id="mycanvas" id="mycanvas" type="2d"
+      bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"
+    >
+    </canvas>
+  </view>
+  <!-- 工具区 -->
+  <view class="tools_area">
+    <view class="pencil" bindtap="penSelect" data-param="3"><image mode="aspectFill" src="https://z3.ax1x.com/2021/07/26/WRc71s.jpg" /></view>
+    <view class="marker" bindtap="penSelect" data-param="15"><image mode="aspectFill" src="https://z3.ax1x.com/2021/07/26/WRcbXq.jpg" /></view>
+
+    <view class="colorBox">
+      <view class="color c1" bindtap="colorSelect" data-param="#CD0000"></view>
+      <view class="color c2" bindtap="colorSelect" data-param="#EE7600"></view>
+      <view class="color c3" bindtap="colorSelect" data-param="#FFD700"></view>
+      <view class="color c4" bindtap="colorSelect" data-param="#A2CD5A"></view>
+      <view class="color c5" bindtap="colorSelect" data-param="#79CDCD"></view>
+      <view class="color c6" bindtap="colorSelect" data-param="#D8BFD8"></view>
+    </view>
+    
+    <view class="clear" bindtap="clearCanvas"><image mode="aspectFill" src="https://z3.ax1x.com/2021/07/26/WRcHcn.jpg" /></view>
+  </view>
+</view>
+

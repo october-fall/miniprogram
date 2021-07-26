@@ -1,0 +1,63 @@
+#mycanvas{
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(245, 255, 255);
+}
+.tools_area{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.pencil image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.marker image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.colorBox{
+  width: 380rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.color{
+  height: 50rpx;
+  width: 50rpx;
+  background-color: blue;
+  margin-left: 6rpx;
+  margin-right: 6rpx;
+  border-radius: 50%;
+}
+.clear image{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.c1{
+  background-color: #CD0000;
+}
+.c2{
+  background-color: #EE7600;
+}
+.c3{
+  background-color: #FFD700;
+}
+.c4{
+  background-color: #A2CD5A;
+}
+.c5{
+  background-color: #79CDCD;
+}
+.c6{
+  background-color: #D8BFD8;
+}
