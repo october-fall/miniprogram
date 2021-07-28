@@ -1,2 +1,9 @@
-<!--pages/animotion/animotion10/index.wxml-->
-<text>pages/animotion/animotion10/index.wxml</text>
+<view class="text text1">cat cat cat cat cat</view>
+<view class="box"  bindtouchmove="touchMove">
+  <view class="circle">
+    <view style="clip-path:circle(100rpx at {{moveX*2}}rpx {{moveY*2}}rpx);" class="text text2">cat cat cat cat cat</view>
+  </view>
+  <view class="image">
+    <image mode="aspectFill" class="img" style="top:{{(moveY-100)*2}}rpx;left:{{(moveX-50)*2}}rpx;" src="https://z3.ax1x.com/2021/07/26/WfSRIK.jpg"></image>
+  </view>
+</view>

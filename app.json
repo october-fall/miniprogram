@@ -1,16 +1,13 @@
 {
   "pages":[
 
-    "pages/animotion/animotion10/index",
-
     "pages/index/index",
-
-
-
-
-    "pages/game/game1/index",
+    
+    "pages/animotion/test/index",
+    "pages/animotion/animotion11/index",
 
     "pages/animotion/study1/index",
+    "pages/animotion/animotion10/index",
     "pages/animotion/animotion9/index",
     "pages/animotion/animotion8/index",
     "pages/animotion/animotion7/index",
@@ -20,6 +17,7 @@
     "pages/animotion/animotion3/index",
     "pages/animotion/animotion2/index",
     "pages/animotion/animotion1/index",
+    "pages/game/2048/index",
     "pages/type/type",
     "pages/mine/accounts/index",
     "pages/mine/myimages/index",

@@ -17,7 +17,7 @@
 <Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
   <block wx:if="{{tabs[0].isActive}}">
     <view class="navigator">
-      <view class="navigator-item"><navigator url="../game/game1/index" >2048</navigator></view>
+      <view class="navigator-item"><navigator url="../game/2048/index" >2048</navigator></view>
     </view>
   </block>
   <block wx:else>
@@ -31,6 +31,7 @@
       <view class="navigator-item"><navigator url="../animotion/animotion7/index" >昼夜切换</navigator></view>
       <!-- <view class="navigator-item"><navigator url="../animotion/animotion8/index" >canvas生成球</navigator></view> -->
       <view class="navigator-item"><navigator url="../animotion/animotion9/index" >涂鸦板</navigator></view>
+      <view class="navigator-item"><navigator url="../animotion/animotion10/index" >圆形显示框</navigator></view>
     </view>
   </block>
 </Tabs>

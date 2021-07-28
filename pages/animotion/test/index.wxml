@@ -1,0 +1,9 @@
+<view class="text text1">cat cat cat cat cat</view>
+<view class="box"  bindtouchmove="touchMove">
+  <view class="circle">
+    <view style="clip-path:circle(50px at {{moveX}}px {{moveY}}px);" class="text text2">cat cat cat cat cat</view>
+  </view>
+  <view class="image">
+    <image mode="aspectFill" class="img" style="top:{{moveY-100}}px;left:{{moveX-50}}px;" src="https://z3.ax1x.com/2021/07/26/WfSRIK.jpg"></image>
+  </view>
+</view>

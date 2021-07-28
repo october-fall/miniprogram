@@ -25,24 +25,6 @@
       {{time}}设置初值为00：00：00
       页面onready之后，每隔1s设置{{time}}+1,并且到59自己进位
    2）在用户滑动时，将已有的块进行位置的移动与值的合并。
-       首先需要知道一行或一列有几个值不为0 的元素，获取他们的列值或行值
-  
-
-
-
-
-
-
-- 将棋盘的数字生成4*4的二维数组list
-- 根据用户滑动方向生成四个小数组，比如用户将上面的棋盘向右滑动，则四个数组为：
-> item[0] = [2, 0, 2, 0];
-> item[1] = [0, 0, 0, 0];
->item[2] = [2, 0, 0, 0];   // 注意是2000而不是0002，因为是向右滑动要从右边开始
-> item[3] = [0, 0, 0, 0];
-- 接下来就是滑动时合并，拿item[0]举例，如果是2020，向右滑动我们应该成为0004
->- 将item[0]的所有0移到末尾变为2200，遍历item将相同的下标值相加，后面的数置为0
->- 2020 -- 2200 -- 4200 --- 4000
-- 如法炮制就可以实现滑动时合并 
   -->
   <view class="head">
     <view class="Hleft">
@@ -56,7 +38,7 @@
         <view>用时:{{time}}</view>
       </view>
       <view class="restart">
-        <view>重新开始</view>
+        <view bindtap="Restart">重新开始</view>
       </view>
     </view>
   </view>
@@ -70,9 +52,8 @@
       wx:for-index="id"
       wx:for-item="item"
       wx:key="*this"
-      class="grid-items {{'value'+item.value}}"
-    >
-      {{item.value}}
+      class="grid-items {{'value'+item}}">
+      {{item}}
     </view>
   </view>
   

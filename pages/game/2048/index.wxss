@@ -1,0 +1,161 @@
+.box{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(182, 199, 214);
+}
+.head{
+  height: 25%;
+  width: 100%;
+  background-color: rgb(239, 241, 241);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hleft{
+  height: 70%;
+  width: 40%;
+  background-color: rgb(239, 241, 241);
+}
+.score{
+  height: 200rpx;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Times New Roman";
+  font-size: 40rpx;
+  color: #333;
+  background-color: rgb(248, 248, 248);
+  border-radius: 10%;
+  margin-left: 100rpx;
+  position: relative;
+}
+.Stop{
+  position: absolute;
+  top:20rpx;
+}
+.Sbottom{
+  position: absolute;
+  top:100rpx;
+}
+.Hright{
+  height: 85%;
+  width: 60%;
+  font-family:"Times New Roman";
+  background-color: rgb(239, 241, 241);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.time{
+  height: 75rpx;
+  width: 280rpx;
+  font-size: 35rpx;
+  color: #333;
+  background-color: rgb(243, 241, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2rpx solid #fff;
+  border-radius: 15rpx;
+}
+.restart{
+  height: 75rpx;
+  width: 280rpx;
+  font-size: 32rpx;
+  color: #333;
+  background-color: rgb(243, 241, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2rpx solid #fff;
+  border-radius: 15rpx;
+}
+
+.body{
+  height: 75%;
+  width: 100%;
+  background-color: rgb(182, 199, 214);
+  display: flex;
+  justify-content: center;
+  
+}
+.grid{
+  height: 600rpx;
+  width: 600rpx;
+  margin-top: 75rpx;
+  display: grid;
+  background-color: rgb(245, 245, 245);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 15rpx 15rpx;
+  padding: 25rpx;
+  border-radius: 15rpx;
+}
+.grid-items{
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Times New Roman";
+  font-size: 50rpx;
+  background-color: rgb(228, 230, 231);
+}
+.value0{
+  color: #666;
+  background-color: rgb(255, 255, 255);
+}
+.value2{
+  color: #555;
+  background-color: rgb(233, 236, 211);
+}
+.value4{
+  color: #555;
+  background-color: rgb(205, 219, 179);
+}
+.value8{
+  color: #eee;
+  background-color: rgb(174, 192, 144);
+}
+.value16{
+  color: #eee;
+  background-color: rgb(243, 231, 160);
+}
+.value32{
+  color: #eee;
+  background-color: rgb(231, 212, 128);
+}
+.value64{
+  color: #eee;
+  background-color: rgb(226, 193, 102);
+}
+.value128{
+  color: #eee;
+  background-color: rgb(218, 182, 150);
+}
+.value256{
+  color: #eee;
+  background-color: rgb(219, 161, 111);
+}
+.value512{
+  color: #eee;
+  background-color: rgb(221, 133, 92);
+}
+.value1024{
+  color: #eee;
+  background-color: rgb(224, 164, 164);
+}
+.value2048{
+  color: #eee;
+  background-color: rgb(199, 107, 107);
+}
+.value4096{
+  color: #eee;
+  background-color: rgb(203, 221, 236);
+}
+.value8192{
+  color: #eee;
+  background-color: rgb(146, 168, 189);
+}

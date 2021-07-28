@@ -18,15 +18,21 @@
   position: absolute;
   object-fit: cover;
 }
+
 .box{
+  /* background-color:red; */
   top: 100rpx;
   position: relative;
   height: 250rpx;
   width: 100vw;
   overflow: hidden;
 }
+
 .circle{
   position: absolute;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
 }
 .image{
   position: relative;
