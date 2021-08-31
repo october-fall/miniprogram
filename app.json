@@ -1,8 +1,15 @@
 {
   "pages":[
-
-    "pages/index/index",
     
+    "pages/index/index",
+    "pages/mine/cssTest/index",
+
+    "pages/mine/grid/index",
+    "pages/mine/trolley/index",
+    "pages/mine/flex/index",
+    "pages/mine/card/index",
+ 
+  
     "pages/animotion/test/index",
     "pages/animotion/animotion11/index",
 
@@ -19,8 +26,8 @@
     "pages/animotion/animotion1/index",
     "pages/game/2048/index",
     "pages/type/type",
-    "pages/mine/accounts/index",
-    "pages/mine/myimages/index",
+
+ 
     "pages/mine/mine",
     "pages/logs/logs"
 

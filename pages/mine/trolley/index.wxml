@@ -1,0 +1,106 @@
+<!--pages/mine/trolley/index.wxml-->
+<view class="commodity">
+  <view class="commodityitems">
+    <view class="c1" bindtap="check">
+      <image mode="aspectFill" src="../../../images/c6.png" />
+    </view>
+    <view class="c2">
+      <image mode="aspectFill" src="../../../images/c1.png" />
+    </view>
+    <view class="c3">HOUSE 99 护肤三部曲套装</view>
+    <view class="c4">400g/ml</view>
+    <view class="c5">
+      <view>1</view>
+      <image mode="aspectFill" src="../../../images/c2.png" />
+    </view>
+    <view class="c6">
+      <image mode="aspectFill" src="../../../images/c3.png" />
+    </view>
+    <view class="c7">￥580</view>
+  </view>
+  <view class="commodityitems">
+    <view class="c1"></view>
+    <view class="c2">
+      <image mode="aspectFill" src="../../../images/c4.png" />
+    </view>
+    <view class="c3">HOUSE 99  自然定型喷雾</view>
+    <view class="c4">200g/ml</view>
+    <view class="c5">
+      <view>1</view>
+      <image mode="aspectFill" src="../../../images/c2.png" />
+    </view>
+    <view class="c6">
+      <image mode="aspectFill" src="../../../images/c3.png" />
+    </view>
+    <view class="c7">￥580</view>
+  </view>
+  <view class="commodityitems">
+    <view class="c1"></view>
+    <view class="c2">
+      <image mode="aspectFill" src="../../../images/c5.png" />
+    </view>
+    <view class="c3">HOUSE 99  自然定型喷雾</view>
+    <view class="c4">200g/ml</view>
+    <view class="c5">
+      <view>1</view>
+      <image mode="aspectFill" src="../../../images/c2.png" />
+    </view>
+    <view class="c6">
+      <image mode="aspectFill" src="../../../images/c3.png" />
+    </view>
+    <view class="c7">￥580</view>  
+  </view>
+</view>
+<view class="bar">
+    <view class="b1">
+      <view class="b2">
+        <image mode="aspectFill" src="../../../images/c7.png" />
+      </view>
+      <view class="b3">合计：￥580.00</view>
+    </view>
+    <view class="pay">
+      <view>立即结算</view>
+    </view>
+</view>
+<view class="navigation">
+  <view class="n">
+    <view class="nn">
+      <image mode="aspectFill" src="../../../images/n1.png" />
+    </view>
+    <view>
+      首页
+    </view>
+  </view>
+  <view class="n">
+    <view class="nn">
+      <image mode="aspectFill" src="../../../images/n2.png" />
+    </view>
+    <view>
+      活动
+    </view>
+  </view>
+  <view class="n">
+    <view class="nn">
+      <image mode="aspectFill" src="../../../images/n3.png" />
+    </view>
+    <view>
+      全部商品
+    </view>
+  </view>
+  <view class="n">
+    <view class="nn">
+      <image mode="aspectFill" src="../../../images/n4.png" />
+    </view>
+    <view>
+      购物车
+    </view>
+  </view>
+  <view class="n">
+    <view class="nn">
+      <image mode="aspectFill" src="../../../images/n5.png" />
+    </view>
+    <view>
+      个人中心
+    </view>
+  </view>
+</view>

@@ -5,12 +5,18 @@
 
 <view class="navigator">
   <view class="navigator-item">
-    <navigator url="../../pages/mine/calendar/index">◉ 日历</navigator>
+    <navigator url="../../pages/mine/card/index">◉ 卡券</navigator>
   </view>
-</view>
-
-<view class="navigator">
   <view class="navigator-item">
-    <navigator url="../../pages/mine/myimages/index">◉ 相册</navigator>
+    <navigator url="../../pages/mine/flex/index">◉ flex练习</navigator>
+  </view>
+  <view class="navigator-item">
+    <navigator url="../../pages/mine/trolley/index">◉ 购物车</navigator>
+  </view>
+  <view class="navigator-item">
+    <navigator url="../../pages/mine/grid/index">◉ grid练习</navigator>
+  </view>
+  <view class="navigator-item">
+    <navigator url="../../pages/mine/cssTest/index">◉ css练习</navigator>
   </view>
 </view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "欧莱雅美丽殿堂",
+  "enablePullDownRefresh":false,
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle":"black"
+}

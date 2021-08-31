@@ -1,0 +1,14 @@
+<view>
+  <view class="box">
+    <view class="top left">总库存：100</view>
+    <view class="top right">剩余：20</view>
+    <image class="image" mode="aspectFit" src="../../../images/card.png" alt="618专属赠品券" ></image>
+    <button class="button" >点击发送</button>
+  </view>
+  <view class="box">
+    <view class="top left">总库存：100</view>
+    <view class="top right">剩余：20</view>
+    <image class="image" mode="aspectFit" src="../../../images/card.png" alt="618专属赠品券" ></image>
+    <button class="button">点击发送</button>
+  </view>
+</view>

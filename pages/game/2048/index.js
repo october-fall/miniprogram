@@ -280,7 +280,7 @@ Page({
           place.push(i);
         }
       }
-      console.log(place,place.length);
+      // console.log(place,place.length);
       if(place.length==0){
         // console.log("游戏结束");
         wx.showToast({  

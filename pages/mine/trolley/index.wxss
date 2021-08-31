@@ -1,0 +1,188 @@
+/* pages/mine/trolley/index.wxss */
+page {
+  background-color: #000000;
+  font-family: FZLTHK--GBK1-0;
+}
+.commodity {
+  height: 1003rpx;
+}
+.commodityitems {
+  width: 719rpx;
+  height: 194rpx;
+  background: #FFFFFF;
+  border-radius: 5rpx;
+  margin: 30rpx 15rpx 42rpx 15rpx;
+}
+.c1 {
+  height: 28rpx;
+  width: 28rpx;
+  border: 1rpx solid #434343;
+  border-radius: 50%; 
+  position: absolute;
+  margin: 86rpx 0rpx 0rpx 28rpx;
+}
+.c1 image {
+  height: 29rpx;
+  width: 29rpx;
+  position: absolute;
+}
+.c2 {
+  width: 160rpx;
+  height: 160rpx;
+  border: rgba(67,67,67,0.5) 1rpx dashed;
+  border-radius: 5rpx;
+  position: absolute;
+  margin: 15rpx 0rpx 0rpx 83rpx;
+}
+.c2 image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 5rpx;
+}
+.c3 {
+  width: 302rpx;
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #000000;
+  line-height: 24rpx;
+  position: absolute;
+  margin: 39rpx 0rpx 0rpx 263rpx;
+}
+.c4 {
+  width: 76rpx;
+  height: 20rpx;
+  font-size: 20rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #000000;
+  line-height: 24rpx;
+  position: absolute;
+  margin: 73rpx 0rpx 0rpx 263rpx;
+}
+.c5 {
+  width: 58rpx;
+  height: 29rpx;
+  border: 1rpx solid rgba(83,83,83,0.5);
+  border-radius: 5rpx;
+  position: absolute;
+  margin: 128rpx 0rpx 0rpx 266rpx;
+}
+.c5 view {
+  font-size: 20rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #000000;
+  line-height: 24rpx;
+  position: absolute;
+  margin: 2rpx 0rpx 0rpx 15rpx;
+}
+.c5 image{
+  width: 13rpx;
+  height: 7rpx;
+  position: absolute;
+  margin: 10rpx 0rpx 0rpx 36rpx;
+}
+.c6 image {
+  width: 23rpx;
+  height: 23rpx;
+  position: absolute;
+  margin: 39rpx 0rpx 0rpx 654rpx;
+}
+.c7 {
+  width: 68rpx;
+  height: 21rpx;
+  font-size: 26rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #000000;
+  line-height: 24rpx;
+  position: absolute;
+  margin: 139rpx 0rpx 0rpx 611rpx;
+}
+.bar {
+  width: 750rpx;
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+}
+.b1 {
+  width: 500rpx;
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+}
+.b2 {
+  height: 28rpx;
+  width: 28rpx;
+  border: 1rpx solid #434343;
+  border-radius: 50%; 
+  position: absolute;
+  margin-left: 28rpx;
+  display: flex;
+  align-items: center;
+}
+.b2 image {
+  height: 29rpx;
+  width: 29rpx;
+  position: absolute;
+}
+.b3 {
+  width: 176rpx;
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 24rpx;
+  position: absolute;
+  margin-left: 270rpx;
+}
+.pay {
+  width: 250rpx;
+  height: 75rpx;
+  background: #931D1A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pay view {
+  width: 100rpx;
+  height: 23rpx;
+  font-size: 24rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 24rpx;
+}
+.navigation {
+  width: 750rpx;
+  height: 96rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.n {
+  width: 80rpx;
+  height: 67rpx;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  font-family: FZLTHK;
+  font-weight: normal;
+  color: #FFFFFF;
+  margin-top: 10rpx;
+}
+.n view:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.nn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.nn image {
+  width: 32rpx;
+  height: 41rpx;
+}

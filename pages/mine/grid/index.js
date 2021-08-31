@@ -1,4 +1,4 @@
-// pages/mine/accounts/index.js
+// pages/mine/grid/index.js
 Page({
 
   /**

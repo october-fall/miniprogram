@@ -1,0 +1,57 @@
+<!-- 
+  5种经典css布局
+    (1) 空间居中布局：
+            不管容器的大小，项目总占据中心点。 => 左上角、右下角布局同理
+    (2) 并列式布局：
+            多个项目并列，如果宽度不够，放不下的项目自动折行。
+    (3) 两栏式布局：
+            一个边栏，一个主栏。边栏始终存在，主栏根据设备宽度变宽或变窄。
+    (4) 三明治布局：
+            页面在垂直方向分为三部分，页眉、内容区、页脚，这个布局总会占满整个页面高度。
+            根据设备宽度自适应，并且不管内容区有多少内容，页脚始终在容器底部（粘性页脚）
+    (5) 圣杯布局：
+            页面分为五个部分，页眉、内容区（左边栏、主栏、右边栏）、页脚
+-->
+<!-- 
+1、空间居中布局
+<view class="box">
+  <view class="item">✿</view>
+</view> -->
+
+<!-- 
+2、并列式布局
+<view class="box">
+  <view class="item">1</view>
+  <view class="item">2</view>
+  <view class="item">3</view>
+</view> -->
+
+<!-- 
+3、两栏式布局
+<view class="box">
+  <view class="left">minmax(150px, 25%)</view>
+  <view class="right">八八八八八八八八八八八八八八八八八八八八八八八</view>
+</view> -->
+
+<!-- 
+4、三明治布局
+<view class="box">
+  <view class="header">header</view>
+  <view class="main">main</view>
+  <view class="footer">footer</view>
+</view> -->
+
+<!-- 
+5、圣杯布局
+ -->
+<view class="box1">
+  <view class="header">header</view>
+  <view class="box2">
+    <view class="left">left sidebar</view>
+    <view class="main">main content</view>
+    <view class="right">right sidebar</view>
+  </view>
+  <view class="footer">footer</view>
+</view>
+
+

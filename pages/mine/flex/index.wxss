@@ -1,0 +1,139 @@
+page {
+  background-color: #eeeeee;
+}
+.basic {
+  height: 105rpx;
+  width: 105rpx;
+  border: #665252 solid 5rpx;
+  border-radius: 10rpx;
+  background-color: #ffecec;
+  margin:30rpx auto;
+}
+.basicItem {
+  height: 30rpx;
+  width: 30rpx;
+  margin: 3rpx;
+  border-radius: 30rpx;
+  background-color: rgb(214, 176, 176);
+}
+/* 
+单item
+.box1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+} */
+/* 
+多item
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+} */
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.box2 {
+  height: 235rpx;
+  width: 742rpx;
+  border: #ccc solid 4rpx;
+  border-radius: 10rpx;
+  background-color: white;
+  margin-top: 10rpx;
+}
+.row2{
+  display: flex;
+}
+.item2 {
+  margin: 5rpx;
+  width: 730rpx;
+  height: 50rpx;
+  background-color: #e9d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+  font-size: 20rpx;
+}
+
+.box3 {
+  margin-top: 10rpx;
+  height: 175rpx;
+  width: 742rpx;
+  border: #ccc solid 4rpx;
+  border-radius: 10rpx;
+  background-color: white;
+}
+.row3{
+  display: flex;
+}
+.item3-1{
+  flex: 0 0 50%;
+}
+.item3-2{
+  flex: 0 0 33.33%;
+}
+.item3-3{
+  flex: 0 0 25%;
+}
+.item3-4{
+  flex: 0 0 33.33%;
+}
+
+
+.box4{
+  margin-top: 10rpx;
+  width: 742rpx;
+  border: #ccc solid 4rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350rpx;
+}
+.header,.footer{
+  min-height: 70rpx;
+  width: 100vw;
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  display: flex;
+  flex: 1;
+}
+.left,.right{
+  flex: 0 0 15%;
+  background-color: rgb(222, 234, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  order: -1;
+}
+.center{
+  flex: 0 0 70%;
+  background-color: rgb(143, 187, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width:350px){
+  .body{
+    flex-direction: column;
+    flex: 1;
+  }
+  .left,.center,.right{
+    flex: auto;
+  }
+}

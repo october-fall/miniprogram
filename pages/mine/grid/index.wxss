@@ -1,0 +1,51 @@
+/* pages/mine/grid/index.wxss */
+page {
+  font-size: 60rpx;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 5rpx;
+  grid-auto-flow: row dense;
+  grid-template-areas: 'a b c'
+                       'd e f'
+                       'g h i';
+}
+.item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item1 {
+  background-color: #ef342a;
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.item2 {
+  background-color: #f68f26;
+  grid-area: i;
+}
+.item3 {
+  background-color: #4ba946;
+}
+.item4 {
+  background-color: #0376c2;
+}
+.item5 {
+  background-color: #c077af;
+}
+.item6 {
+  background-color: #f8d29d;
+}
+.item7 {
+  background-color: #c7b79b;
+}
+.item8 {
+  background-color: #d5e4b4;
+}
+.item9 {
+  background-color: #9bdfeb;
+}

@@ -1,0 +1,101 @@
+page {
+  background-color: rgb(214, 234, 243);
+}
+/* 
+1、空间居中布局
+.box {
+  height: 750rpx;
+  width: 750rpx;
+  display: grid;
+  place-items: center center;
+}
+.item {
+  height: 120rpx;
+  width: 75rpx;
+  background-color: #ffd0bd;
+  border-radius: 20rpx;
+  font-size: 80rpx;
+  color: #ffffff;
+} */
+/* 
+2、并列式布局
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item {
+  height: 100px;
+  width: 200px;
+  background-color: #ffd0bd;
+  border-radius: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 200px;
+  margin: 5px;
+} */
+
+/* 
+3、两栏式布局
+.box {
+  display: grid;
+  grid-template-columns: minmax(100rpx,20%) 1fr;
+}
+.left {
+  background-color: rgb(255, 254, 219);
+}
+.right {
+  background-color: rgb(255, 221, 198);
+} */
+
+/* 
+4、三明治布局
+.box{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.header {
+  height: 80rpx;
+  background-color: rgb(207, 230, 250);
+}
+.main {
+  background-color: rgb(247, 214, 187);
+}
+.footer {
+  height: 80rpx;
+  background-color: rgb(234, 241, 129);
+} */
+
+/* 
+5、圣杯布局
+ */
+.box1{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.box2{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+.header {
+  height: 80rpx;
+  background-color: rgb(233, 207, 250);
+}
+.left {
+  background-color: rgb(129, 191, 241);
+}
+.main {
+  background-color: rgb(247, 214, 187);
+}
+.right {
+  background-color: rgb(241, 174, 87);
+}
+.footer {
+  height: 80rpx;
+  background-color: rgb(208, 245, 208);
+}
