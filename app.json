@@ -1,18 +1,13 @@
 {
   "pages":[
     
-    "pages/index/index",
-    "pages/mine/cssTest/index",
 
-    "pages/mine/grid/index",
-    "pages/mine/trolley/index",
-    "pages/mine/flex/index",
-    "pages/mine/card/index",
- 
-  
+    "pages/game/game1/index",
+
+    "pages/index/index",
+    
     "pages/animotion/test/index",
     "pages/animotion/animotion11/index",
-
     "pages/animotion/study1/index",
     "pages/animotion/animotion10/index",
     "pages/animotion/animotion9/index",
@@ -26,11 +21,13 @@
     "pages/animotion/animotion1/index",
     "pages/game/2048/index",
     "pages/type/type",
-
- 
+    "pages/mine/cssTest/index",
+    "pages/mine/grid/index",
+    "pages/mine/trolley/index",
+    "pages/mine/flex/index",
+    "pages/mine/card/index",
     "pages/mine/mine",
     "pages/logs/logs"
-
   ],
   "window":{
     "backgroundTextStyle":"dark",
