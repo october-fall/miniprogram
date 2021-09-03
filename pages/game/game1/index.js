@@ -49,17 +49,10 @@ Page({
     X: 0,
     Y: 0,
     
-    A1: {},
-    A2: {},
     itemX: '',
     itemY: '',
-    laterX: '',
-    laterY: '',
-    nowX: 0,
-    nowY: 0,
     color: '',
     distance: 0,
-    count:0,
     
   },
 
@@ -142,10 +135,7 @@ Page({
     let moveY = this.data.moveY-188;
     let xxx = this.data.xxx;
     let yyy = this.data.yyy;
-    let distance = this.data.distance;
-    // console.log('move',moveX,moveY);
-    // console.log('now',xxx,yyy);
-    distance = Math.sqrt(((moveX-xxx)*(moveX-xxx))+((moveY-yyy)*(moveY-yyy)));
+    let distance = Math.sqrt(((moveX-xxx)*(moveX-xxx))+((moveY-yyy)*(moveY-yyy)));
     // console.log(distance);
     let flag = this.data.flag;
     if( distance < 10) {
