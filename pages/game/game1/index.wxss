@@ -1,12 +1,11 @@
 /* pages/game/game1/index.wxss */
-.box{
+.box {
   height: 750rpx;
   width: 750rpx;
-  background-color: rgb(204, 204, 204);
+  background-color: #dddddd;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 .circle {
   height: 550rpx;
@@ -17,77 +16,44 @@
   align-items: center;
   justify-content: center;
 }
-.test {
+.cc {
+  height: 550rpx;
+  width: 550rpx;
+  border-radius: 50%;
+  border: 4rpx white solid;
+  position: absolute;
+}
+.catch {
   height: 100rpx;
   width: 100rpx;
-  background-color: #ffffff;
+  border: 10rpx solid white;
   border-radius: 50%;
   position: absolute;
-  transform-origin: 327rpx 50rpx;
-}
-.finger {
-  height: 100rpx;
-  width: 100rpx;
-  background-color: #b7b0cc;
-  border-radius: 50%;
-  position: absolute;
-  top: 327rpx;
-  left: 55rpx;
-  animation: finger-rorate 5s infinite linear;
-  transform-origin: 327rpx 50rpx;
-}
-@keyframes finger-rorate {
-  0%{
-    transform: rotate(-180deg);
-  }
-  50%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(180deg);
-  }
 }
 .item {
-  animation: item-move 5s infinite ease-in;
-  z-index: 10;
-}
-@keyframes item-move {
-  0%{
-    transform: translate(0,0) translateZ(0) scale(1);
-    opacity: 0;
-  }
-  20%{
-    opacity: 0;
-  }
-  21%{
-    opacity: 1;
-  }
-  100%{
-    transform: translate(400rpx,400rpx) translateZ(10000rpx) scale(45);
-  }
-}
-
-.black {
-  height: 5rpx;
-  width: 5rpx;
   border-radius: 50%;
-  background-color: #333333;
+  position: absolute;
+  transform-origin: center;
 }
-.green {
-  height: 5rpx;
-  width: 5rpx;
-  border-radius: 50%;
-  background-color: #70a03a;
+.grade {
+  height: 200rpx;
+  width: 140rpx;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  top: 10rpx;
+  z-index: 20;
 }
-.yellow {
-  height: 5rpx;
-  width: 5rpx;
-  border-radius: 50%;
-  background-color: #e2cd13;
+.a{
+  height: 40rpx;
+  width: 110rpx;
+  display: flex;
+  justify-content: space-around;
 }
-.white {
-  height: 5rpx;
-  width: 5rpx;
+.Gitem {
+  height: 40rpx;
+  width: 40rpx;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: aliceblue;
 }

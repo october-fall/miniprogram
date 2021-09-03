@@ -1,94 +1,84 @@
 let srcList = [{
-    // src: '',
-    // width: 10,
-    // distance: 200,
-    color: 'black',
+    id: 0,
+    color: '#333333',
+    count: 0,
   },{
-    color: 'green',
+    id: 1,
+    color: '#70a03a',
+    count: 0,
   },{
-    color: 'yellow',
+    id: 2,
+    color: '#e2cd13',
+    count: 0,
   },{
-    color: 'white',
+    id: 3,
+    color: '#ffffff',
+    count: 0,
   }]
 
-// class Item {
-//   constructor(src,width,speed = 1,positionIndex = 0,diatanceS,diatanceE) {
-//     this.src = src
-//     this.width = width
-//     this.speed = speed
-//     this.distanceS = distanceS
-//     this.distanceE = distanceE
-//     this.positionIndex = positionIndex
-//   }
-//   move() {
-//     this.positionIndex += this.speed
-//   }
-// }
+let ballList = [{
+  id: 0,
+  obj: null,
+}]
+
+class ballObj {
+  constructor(color, width){
+    this.color = color;
+    this.width = width;
+  }
+  move() {
+    this.width += 10;
+  }
+}
 
 Page({
   data: {
     moveX: 0,
     moveY: 0,
+    r: 138, //绕圈的圈的半径
+    
+    flag: true,
+    xxx: 0,
+    yyy: 0,
+    height: 2.5,
+    width: 2.5,
+
+    srcList,
+
+    ballList,
+    X: 0,
+    Y: 0,
+    
     A1: {},
+    A2: {},
     itemX: '',
     itemY: '',
     laterX: '',
     laterY: '',
+    nowX: 0,
+    nowY: 0,
     color: '',
     distance: 0,
+    count:0,
+    
   },
 
-  touchMove: function(e) {
-    let itemX = this.data.itemX;
-    let itemY = this.data.itemY;
-    let moveX = this.data.moveX;
-    let moveY = this.data.moveY;
-    const X = e.changedTouches[0].clientX;
-    const Y = e.changedTouches[0].clientY;
-      // this.where(X,Y);
-      moveX = X;
-      if(Y>188){
-        moveY = Math.sqrt(Math.abs((138*138)-((moveX-188)*(moveX-188))))+188;
-      }else{
-        moveY = (188 - (Math.sqrt(Math.abs((138*138)-((moveX-188)*(moveX-188))))+188)) + 188;
-      }
-    this.setData({
-      moveX: moveX,
-      moveY: moveY,
-    })
-    // console.log(moveX,moveY);
-    this.getItem(itemX,itemY,moveX,moveY);
-  },
-  // where: (x0,y0) => {
-  //   console.log('eeeeee');
-  //   const k = (188-y0)/(188-x0);
-  //   const b = y0-k*x0;
-  //   for(let x = 0; x < 375; x++){
-  //     for(let y = 0; x < 375; y++){
-  //       if(y==k*x+b&&(((x-188)*(x-188))+((y-188)*(y-188))==138*138)){
-  //         console.log(x,y);
-  //       }
-  //     }
-  //   }
-  // },
   onShow: function () {
-    this.drawItem();
+   this.drawItem();
   },
 
-   // 选择哪一个颜色（图片）
-   select() {
-    return srcList[Math.round(Math.random() * 3)].color
+  drawItem() {
+    this.newItem();
   },
+
   // 获取移动的方向以及颜色
   newItem() {
-    let itemX = this.data.itemX;
-    let itemY = this.data.itemY;
-    let laterX = this.data.laterX;
-    let laterY = this.data.laterY;
-    let color = this.data.color;
-    color = this.select();
-    const x = Math.round(Math.random() * 138);
-    const y = Math.sqrt(19052-x*x);
+    // 随机生成圆上的任意一个点
+    let r = this.data.r;
+    let itemX = 0;
+    let itemY = 0;
+    const x = Math.round(Math.random() * r);
+    const y = Math.sqrt(r*r-x*x);
     const symbolX = Math.round(Math.random());
     const symbolY = Math.round(Math.random());
     if(symbolX==0){
@@ -101,57 +91,111 @@ Page({
     }else{
       itemY = -y;
     }
-    const k = 145/97.6;
-    console.log(itemX,itemY);
-// 判断一下正负再加
-    // laterX = itemX + itemX*k;
-    // laterY = itemY + itemY*k;
+    const color = this.select();
+    // console.log(itemX,itemY,color);
     this.setData({
-      itemX: itemX,
-      itemY: itemY,
-      color: color,
-      laterX: laterX,
-      laterY: laterY,
-    });
-    console.log(laterX,laterY);
+      color: color
+    })
+    setInterval(() => {
+      let flag = this.data.flag;
+      if(flag){
+        this.move(itemX,itemY);
+        this.getItem();
+      }
+    }, 1000/60);
   },
-  drawItem() {
-    // Item类还没有写，页面里只有一个元素，无法定时生成新的。
-    // setInterval(()=>{  },3000)
-      this.newItem(); // 获取移动的方向以及颜色
-      let itemX = this.data.itemX;
-      let itemY = this.data.itemY;
-      let laterX = this.data.laterX;
-      let laterY = this.data.laterY;
-      var animation1 = wx.createAnimation({
-        duration: 5000,
-        timingFunction: 'ease-in',
-      })
-      animation1.translate3d(0,0,0).scale(1).translate3d(laterX,laterY,'10000rpx').scale(45).step();
+
+  move(itemX,itemY) {
+    let xxx = this.data.xxx;
+    let yyy = this.data.yyy;
+    let width = this.data.width;
+    let height = this.data.height;
+    const r = this.data.r;
+    this.itemX = itemX;
+    this.itemY = itemY;
+    const speedX = itemX/r;
+    const speedY = itemY/r;
+    // console.log(xxx,yyy,speedX,speedY,itemX,itemY);
+    xxx = xxx + speedX;
+    yyy = yyy + speedY;
+    width = width + 48/r;
+    height = height + 48/r;
+    this.setData({
+      xxx: xxx,
+      yyy: yyy,
+      width: width,
+      height: height,
+    })
+    const dis = Math.sqrt(xxx*xxx+yyy*yyy);
+    let flag = this.data.flag;
+    if( dis >= 300) {
+      flag = false;
       this.setData({
-        A1: animation1.export(),
-      })
+        flag: flag
+      });
+    };
   },
 
   // 能否捕捉到item
-  getItem(itemX,itemY,moveX,moveY){
-    if(moveX){
-      let X = 0;
-      let Y = 0;
-      let distance = this.data.distance;
-      // console.log(Number(itemX));
-      
-      // console.log(X,Y);
-      distance = Math.sqrt(((moveX-X)*(moveX-X))+((moveY-Y)*(moveY-Y)));
+  getItem(){
+    let moveX = this.data.moveX-188;
+    let moveY = this.data.moveY-188;
+    let xxx = this.data.xxx;
+    let yyy = this.data.yyy;
+    let distance = this.data.distance;
+    // console.log('move',moveX,moveY);
+    // console.log('now',xxx,yyy);
+    distance = Math.sqrt(((moveX-xxx)*(moveX-xxx))+((moveY-yyy)*(moveY-yyy)));
+    // console.log(distance);
+    let flag = this.data.flag;
+    if( distance < 10) {
+      flag = false;
       this.setData({
-        distance: distance,
-      })
-      console.log(itemX,itemY,moveX,moveY)
-      console.log(distance);
-    }
+        flag: flag
+      });
+      console.log('获取到了');
+      let color = this.data.color;
+      let srcList = this.data.srcList;
+      for(let i = 0; i < 4 ; i++){
+        if(color==srcList[i].color){
+          srcList[i].count++;
+          this.setData({
+            srcList: srcList
+          })
+        }
+      }
+    };
   },
-    
   
-  
+  // 随机选择一个颜色（图片）
+  select() {
+    return srcList[Math.round(Math.random() * 3)].color
+  },
+  // touchmove时圆环在哪
+  touchMove: function(e) {
+    this.where(e);
+  },
+  tap: function(e) {
+    this.where(e);
+  },
+  where: function(event) {
+    let moveX = this.data.moveX;
+    let moveY = this.data.moveY;
+    const r = this.data.r;
+    const X = event.changedTouches[0].clientX-188;
+    const Y = event.changedTouches[0].clientY-188;
+    let x = 0;
+    let y = 0;
+    const dis = Math.sqrt(X*X+Y*Y);
+    x = (r / dis) * X;
+    y = (r / dis) * Y;
+    moveX = x + 188;
+    moveY = y + 188;
+    this.setData({
+      moveX: moveX,
+      moveY: moveY,
+    })
+  },
+
 })
 

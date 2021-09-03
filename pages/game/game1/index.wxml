@@ -11,13 +11,27 @@
     3. 一共三个level,item们速度越来越快
 
  -->
-<view class="box"  bindtouchmove="touchMove" bindtap="tapTap">
-  <!-- <view class="test" animation="{{A1}}"></view> -->
-  <!-- <view class="finger"></view> -->
-  <view class="test" style="top:{{(moveY-25)*2}}rpx;left:{{(moveX-25)*2}}rpx;" ></view>
-  <view class="circle">
-    <view class="item black"></view>
-    <view class="{{color}}" animation="{{A1}}"></view>
+<view class="box"  bindtouchmove="touchMove" bindtap="tap">
+  <view class="catch" style="top:{{(moveY-27.5)*2}}rpx;left:{{(moveX-27.5)*2}}rpx;" ></view>
+  <!-- <view class="circle" style="clip-path:circle(30% at {{(moveX-27.5)*2}}rpx {{(moveY-27.5)*2}}rpx)"> -->
+    <view class="circle">
+
+    <!-- <view 
+      wx:for="{{ballList}}"
+      wx:key="id"
+      style="background-color: {{item.color}} width:{{item.width*2}}rpx"
+      class="item"
+    ></view> -->
+    <view 
+      class="item" 
+      style="transform:translate3d({{xxx*2}}rpx,{{yyy*2}}rpx,20000rpx); background-color:{{color}}; height:{{height*2}}rpx;width:{{width*2}}rpx "
+    ></view>
   </view>
+</view>
+<view class="grade">
+  <view class="a"><view class="Gitem" style="background-color:{{srcList[0].color}}"></view>{{srcList[0].count}}</view>
+  <view class="a"><view class="Gitem" style="background-color:{{srcList[1].color}}"></view>{{srcList[1].count}}</view>
+  <view class="a"><view class="Gitem" style="background-color:{{srcList[2].color}}"></view>{{srcList[2].count}}</view>
+  <view class="a"><view class="Gitem" style="background-color:{{srcList[3].color}}"></view>{{srcList[3].count}}</view>
 </view>
 
