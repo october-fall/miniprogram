@@ -35,9 +35,10 @@ Page({
   data: {
     moveX: 0,
     moveY: 0,
-    r: 138, //绕圈的圈的半径
+    r: 138, // 绕圈的圈的半径
     
-    flag: true,
+    flag: true, // 是否移动
+    isGet: false, // 是否获取到
     xxx: 0,
     yyy: 0,
     height: 2.5,
@@ -121,7 +122,8 @@ Page({
     })
     const dis = Math.sqrt(xxx*xxx+yyy*yyy);
     let flag = this.data.flag;
-    if( dis >= 300) {
+    let isGet = this.data.isGet;
+    if( (dis >= 300)) {
       flag = false;
       this.setData({
         flag: flag
@@ -138,10 +140,13 @@ Page({
     let distance = Math.sqrt(((moveX-xxx)*(moveX-xxx))+((moveY-yyy)*(moveY-yyy)));
     // console.log(distance);
     let flag = this.data.flag;
+    let isGet = this.data.isGet;
     if( distance < 10) {
+      isGet = true;
       flag = false;
       this.setData({
-        flag: flag
+        isGet: isGet,
+        flag: flag,
       });
       console.log('获取到了');
       let color = this.data.color;
